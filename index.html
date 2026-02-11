@@ -60,15 +60,16 @@
     </table>
 
     <h3>Book Now</h3>
-    <form action="/action_page.php">
+    <form action="https://clothhygiene.netlify.app/">
         <label for="fname">Name:</label>
-        <input type="text"maxlength="15" required>
+        <input id="fname" type="text" pattern="[A-Za-z] {3,15}" title="Please Enter Valid Name" placeholder="Enter Your Name" required>
         <label for="email">Email:</label>
-        <input type="email"maxlength="20" required>
+        <input id="email" type="email"maxlength="50" placeholder="Enter Your Email" required>
         <label for="number">Contact Number:</label>
-        <input type="number" maxlength="12" required>
-        <button type="button">Submit</button>
+        <input id="number" type="tel" pattern="[0-9]{10}" placeholder="Enter Your Number" title="Please enter a 10-digit phone number" required>
+        <button type="Submit">Submit</button>
     </form>
+    <br>
     <footer>
         <p>Contact us at: info@laundrymart.com.</p>
     </footer>
